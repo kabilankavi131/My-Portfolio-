@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Portfolio</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Concert+One&family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&family=Poppins:wght@600&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+      <!-- CDN sources:  -->
+ <!-- CSS CDN  -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!--  JS CDN -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    </head>
+    <body>
+        <header id='Home' data-aos='fade-down'>
+            Kabilan K
+         <span class='obar' id='obar'>  <i id='bar' class='fa fa-bars'></i></span>
+        <span class='oclose' id='oclose'> <i id='close' class='fa fa-close'></i></span>
+        </header>
+            <div  id='content' class='nav'>
+                <ol >
+                    
+                  <a href='#Home'>   <li>Home</li></a>
+                 <a href='#About'>   <li>About</li></a>
+                 <a href='#Skills'>   <li>Skills</li></a>
+                  <a href='https://wa.me/919791694715?text=Hi Kabilan '>  <li>Contact</li></a>
+                </ol>
+            </div>
+       
+        <br />
+        <div class='intro'>
+            <h2 data-aos="fade-up">Hi,</h2>
+            <br />
+            <h3 data-aos="fade-up">i'am <span>Kabilan</span></h3>
+            <br />
+            <h3 data-aos="fade-up">Learning to be a fullstack developer with AI collabration</h3>
+ </div>
+      <br /><br />
+     <div class='About'><br />
+         <div id='About' class='Aboutborder'><h1 data-aos="fade-left">About Me</h1></div>
+         <br />
+        <center> <img data-aos="zoom-in" src='https://i.ibb.co/n3L586W/23534-1.jpg'> <br /></center>
+        <p data-aos="fade-right">Hello i'm kabilan studying in the department of second year AI&DS(Artificial Intelligence and Data Science)I started to code when i was 18 years old.I continue enchancing my abilities,increased more information and my enthusiasm for developing websites and AI related stuffs</p>
+     <div data-aos="fade-up" class='socials'>  <a href="https://instagram.com/kabilankavi_131?igshid=YmMyMTA2M2Y="><i class='fa fa-instagram'></i></a><a href="https://www.linkedin.com/in/kabilan-k-384451227"><i class='fa fa-linkedin'></i></a> <a href="https://github.com/kabilankavi131"><i class='fa fa-github'></i></a></div>
+     </div><br /><br />
+   <div class='Skills'>
+     <br />
+     <div class='Skillsborder'> <h1 id='Skills' data-aos="fade-left">Skills</h1></div>
+<br /> <div class='lgssep'>
+  <div data-aos="fade-right" class='langs'>Html</div>
+      <div data-aos="fade-right" class='html'>70%</div>
+      <br />
+    <div data-aos="fade-left" class='langs'>Css</div>
+     <div data-aos="fade-left" class='css'>40%</div>
+     <br />
+     <div data-aos="fade-right">Js</div>
+         <div data-aos="fade-right" class='js'>20%</div>
+         <br />
+    <div data-aos="fade-left" class='langs'>Python</div>
+      <div data-aos="fade-left" class='python'>30%</div>
+      <br />
+      <div data-aos="fade-right" class='langs'>C</div>
+      <div data-aos="fade-riht" class='c'>60%</div>
+      <br />
+      <div data-aos="fade-left" class='langs'>C++</div>
+      <div data-aos="fade-left" class='cplus'>50%</div>
+      <br />
+        </div>
+   </div>
+   <div class='top'><a href='#About'><i class='fa fa-arrow-up'></i></a></div>
+<br /><br />
+<footer>
+    <h1 data-aos="fade-right" align='left'>Kabilan k</h1>
+    <br />
+    <h3 data-aos="slide-up">Copyright &copy; reserved by kabilan</h3>
+</footer>
+
+    </body>
+</html>
+
+<script>
+ AOS.init({
+        duration: 1000,
+        offset:0,
+      });
+  var bars=document.getElementById('bar');
+  var obar=document.getElementById('obar');
+  var close=document.getElementById('oclose');
+  bars.addEventListener('click',()=>{
+      var content=document.getElementById('content');
+    if(content.style.width=='70vw'){
+      content.style.width='0vw';
+
+    }
+      else{
+       obar.style.display='none';
+       oclose.style.display='inline';
+       content.style.width='70vw';
+
+      }
+})
+
+
+  close.addEventListener('click',()=>{
+      content.style.width='0vw';
+       oclose.style.display='none';
+        obar.style.display='inline';
+
+  })
+
+
+
+</script>
